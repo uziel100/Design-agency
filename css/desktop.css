@@ -37,5 +37,8 @@
         display: block;
     }
 
+    .header__menu-icon{
+        display: none;
+    }
     
 }

@@ -188,6 +188,10 @@ p, a{
     margin-right: 1.6rem;
 }
 
+.header__actions{
+    display: flex;
+}
+
 .btn{
     background: transparent;
     padding: 1.2rem 2.5rem;
@@ -455,6 +459,8 @@ section__description--size-sm{
     list-style: none;
 }
 
+
+
 /* drawer menu */
 
 .drawer__menu{    
@@ -481,7 +487,7 @@ section__description--size-sm{
     height: 36px;
     padding: 3px;
     vertical-align: middle;
-    margin-right: 1.6rem;
+    margin-right: 1.8rem;
     cursor: pointer;
     transition: all 300ms;
 }
@@ -611,8 +617,12 @@ section__description--size-sm{
         width: 100%;            
     }
 
-    .header__actions{
+    .header__button{
         display: none;
+    }
+
+    .header__btn-theme{
+        margin-top: -6px;
     }
 
     .card--row{

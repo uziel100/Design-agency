@@ -32,9 +32,13 @@
         width: 100%;    
         width: calc(100% / 3 - 2rem);
     }
-
-    .header__actions{
+    
+    .header__button{
         display: block;
+    }
+
+    .header__btn-theme{
+        margin-top: 2px;
     }
 
     .header__menu-icon{

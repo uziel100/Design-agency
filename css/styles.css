@@ -13,6 +13,9 @@
     --nav-link: #fff;
     --nav-bg: #000;
 
+    /* hero img */
+    --bg-hero: url(../images/hero-vector.svg);
+
     /* cards */
     --card-title: #3B3E43;
     --card-paragraph: #595E64;
@@ -30,6 +33,40 @@
     --footer-color-link: rgba(255, 255, 255, 0.8);
 }
 
+:root[data-theme="dark"]{
+    --color-background: #292929;
+    --color-primary: #060a0c;
+    --color-secondary: #00A077;
+    --color-accent: #5370a0;
+    --color-bg-gradient: linear-gradient(249.78deg, var(--color-primary) -0.64%, var(--color-accent) 103.6%);
+    --color-white: #fff;
+    --color-black-600: #3B3E43;
+    --color-black-500: #424A4D;
+
+    /* navbar */
+    --nav-link: #fff;
+    --nav-bg: #000;
+
+    /* hero img */
+    --bg-hero: url(../images/hero-vector-dark.svg);
+
+    /* cards */
+    --card-title: #ffffff;
+    --card-paragraph: #c2c5c7;
+    --card-background: #212020;
+    --card-box-shadow: 0px 20px 50px rgba(59, 62, 67, 0.05);
+    --card-radious: 10px;
+
+     /* titles */
+    --color-h1-dark: #e6e6e6;
+    --color-h2-dark: #f1f1f1;
+    --color-h3-dark: #3B3E43;
+
+    /* footer */
+    --footer-background: #01181d;
+    --footer-color-link: rgba(255, 255, 255, 0.8);
+}
+
 *,
 *::after,
 *::before{
@@ -41,7 +78,7 @@
 }
 
 html{
-    font-size: 62.5%;
+    font-size: 62.5%;    
 }
 
 
@@ -87,7 +124,7 @@ p, a{
 .hero-vector{    
     width: 100%;
     height: 80rem;    
-    background-image: url(../images/hero-vector.svg);    
+    background-image: var(--bg-hero);    
     position: absolute;
     top: -8rem;
     background-size: cover;
@@ -433,6 +470,42 @@ section__description--size-sm{
     animation-duration: 400ms;
     transition: all 300ms;
     border: none;
+}
+
+/* mode dark and lingh (theme) */
+.header__btn-theme{
+    border: none;
+    border-radius: 8px;
+    background-color: var(--color-white);    
+    width: 36px;
+    height: 36px;
+    padding: 3px;
+    vertical-align: middle;
+    margin-right: 1.6rem;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+.header__btn-theme:hover{
+    border: 1px solid var(--color-accent);    
+}
+
+.theme__dark{
+    display: inline-block;
+    background-image: url(../images/mode-dark.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 22px;
+    height: 25px;
+}
+
+.theme__ligth{
+    display: inline-block;
+    background-image: url(../images/mode-ligth.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 25px;
+    height: 25px;
 }
 
 

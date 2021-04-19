@@ -240,11 +240,13 @@ p, a{
 }
 
 .hero__figure{
-    width: 200px;
+    width: 320px;
+    height: 243px
 }
 
 .hero__figure img{
-    width: 95%;
+    width: 100%;
+    height: 100%;
 }
 
 /* -------------- */
@@ -416,6 +418,7 @@ section__description--size-sm{
 
 /* footer */
 .footer{
+    content-visibility: auto;
     color: var(--footer-color-link);
 }
 

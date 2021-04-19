@@ -9,7 +9,7 @@
     .wrapper{
         padding: 0px 1.6rem;
     }
-
+   
     .card-size-sm{
         width: 100%;    
         width: calc(100% / 2 - 2rem);
